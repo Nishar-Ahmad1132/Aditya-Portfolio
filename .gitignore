@@ -13,6 +13,7 @@
 # Dependencies & Builds
 # =========================
 **/node_modules
+
 **/dist
 **/dist-ssr
 **/*.local
@@ -29,3 +30,10 @@
 **/*.njsproj
 **/*.sln
 **/*.sw?
+
+# =========================
+# Environment files
+# =========================
+**/.env
+**/.env.test
+**/.env.local
