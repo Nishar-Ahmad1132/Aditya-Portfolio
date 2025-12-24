@@ -17,12 +17,8 @@ const Navbar = () => {
 
   const isActive = (path) => location.pathname === path;
 
-  // Detect scroll
   useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 20);
-    };
-
+    const handleScroll = () => setScrolled(window.scrollY > 20);
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -30,34 +26,34 @@ const Navbar = () => {
   return (
     <nav
       className={`sticky top-0 z-50 transition-all duration-300
-        ${scrolled ? "bg-white/70 backdrop-blur-md shadow-sm" : "bg-white"}
-      `}
+    ${
+      scrolled
+        ? "bg-[#0b0f1a]/80 backdrop-blur-lg border border-white/10 shadow-lg"
+        : "bg-[#0b0f1a]/60 backdrop-blur-md"
+    }
+  `}
     >
       <div
         className={`max-w-7xl mx-auto px-6 py-4 flex justify-between items-center
-          ${scrolled ? "rounded-none md:rounded-md mx-2 md:mx-auto" : ""}
-        `}
+    ${scrolled ? "rounded-xl mx-2 md:mx-auto" : ""}
+  `}
       >
         {/* Logo */}
-        <Link
-          to="/"
-          className="text-lg font-bold"
-          onClick={() => setMenuOpen(false)}
-        >
-          Aditya Jha
+        <Link to="/" className="text-lg font-bold tracking-wide text-gray-200">
+          <span className="text-cyan-400">Aditya</span> Jha
         </Link>
 
         {/* Desktop Menu */}
-        <div className="hidden md:flex items-center space-x-8">
+        <div className="hidden md:flex items-center space-x-10">
           {navLinks.map((link) => (
             <Link
               key={link.name}
               to={link.path}
-              className={`relative pb-1 transition-all duration-200
+              className={`relative pb-1 text-sm tracking-wide transition-all duration-200
                 ${
                   isActive(link.path)
-                    ? "text-black after:absolute after:left-0 after:-bottom-1 after:w-full after:h-[2px] after:bg-black"
-                    : "text-gray-600 hover:text-black"
+                    ? "text-cyan-400 after:absolute after:left-0 after:-bottom-1 after:w-full after:h-[2px] after:bg-cyan-400"
+                    : "text-gray-300 hover:text-cyan-400"
                 }
               `}
             >
@@ -66,8 +62,11 @@ const Navbar = () => {
           ))}
         </div>
 
-        {/* Hamburger Button */}
-        <button className="md:hidden" onClick={() => setMenuOpen(!menuOpen)}>
+        {/* Hamburger */}
+        <button
+          className="md:hidden text-white"
+          onClick={() => setMenuOpen(!menuOpen)}
+        >
           <svg
             className="w-7 h-7"
             fill="none"
@@ -95,20 +94,20 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {menuOpen && (
-        <div className="md:hidden bg-white/80 backdrop-blur-md border-t">
-          <div className="flex flex-col items-center py-8 space-y-6">
+        <div className="md:hidden bg-[#0b0f1a]/95 backdrop-blur-xl border-t border-white/10">
+          <div className="flex flex-col items-center py-10 space-y-7">
             {navLinks.map((link) => (
               <Link
                 key={link.name}
                 to={link.path}
                 onClick={() => setMenuOpen(false)}
-                className={`relative text-lg pb-1 transition-all
-                  ${
-                    isActive(link.path)
-                      ? "font-semibold after:absolute after:left-0 after:-bottom-1 after:w-full after:h-[2px] after:bg-black"
-                      : "text-gray-700 hover:text-black"
-                  }
-                `}
+                className={`relative text-lg transition-all
+  ${
+    isActive(link.path)
+      ? "text-cyan-400 font-semibold after:absolute after:left-0 after:-bottom-1 after:w-full after:h-[2px] after:bg-cyan-400"
+      : "text-gray-400 hover:text-cyan-400"
+  }
+`}
               >
                 {link.name}
               </Link>
