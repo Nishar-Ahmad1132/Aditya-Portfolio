@@ -32,8 +32,9 @@
 **/*.sw?
 
 # =========================
-# Environment files
+# Environment files (anywhere)
 # =========================
 **/.env
-**/.env.test
-**/.env.local
+**/.env.*
+!.env.example
+
