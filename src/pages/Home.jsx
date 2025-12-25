@@ -9,9 +9,12 @@ import Contact from "./Contact";
 
 const roles = [
   "Business Analyst",
-  "Data Analytics Enthusiast",
+  "Data Analyst",
   "Power BI & SQL Specialist",
+  "Python for Data Analytics",
+  "Data-Driven Problem Solver",
 ];
+
 
 const Home = () => {
   const [text, setText] = useState("");
