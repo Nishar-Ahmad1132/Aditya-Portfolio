@@ -10,8 +10,7 @@ import Contact from "./Contact";
 const roles = [
   "Business Analyst",
   "Data Analyst",
-  "Power BI & SQL Specialist",
-  "Python for Data Analytics",
+  "Python & SQL Specialist",
   "Data-Driven Problem Solver",
 ];
 

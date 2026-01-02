@@ -1,15 +1,14 @@
 const projectsData = [
   {
-    title: "Sales Performance Dashboard",
+    title: "Healthcare Data Analytics & Dashboarding",
     summary:
-      "Built an interactive dashboard to track KPIs and analyze sales performance.",
+      "Delivered data-driven insights and dashboards to support healthcare operations and patient workflow analysis.",
     details: [
-      "Cleaned and transformed raw sales data using SQL and Excel.",
-      "Identified top-performing regions, products, and sales trends.",
-      "Designed an interactive Power BI dashboard with slicers and KPIs.",
-      "Enabled stakeholders to make data-driven decisions faster.",
+      "Analyzed healthcare system data using SQL and Python to translate business requirements into actionable analytical insights.",
+      "Designed Power BI dashboards to visualize patient workflows, operational metrics, and process bottlenecks.",
+      "Supported testing and UAT activities by validating data accuracy, dashboard logic, and stakeholder requirements.",
     ],
-    tech: ["Power BI", "SQL", "Excel"],
+    tech: ["SQL", "Python", "Power BI"],
     github: "",
     live: "",
   },
@@ -18,26 +17,24 @@ const projectsData = [
     summary:
       "Analyzed customer behavior to identify churn drivers and retention opportunities.",
     details: [
-      "Performed exploratory data analysis using Python and Pandas.",
-      "Identified key churn indicators such as usage patterns and contract types.",
-      "Visualized insights using Matplotlib and Seaborn.",
-      "Proposed actionable retention strategies based on findings.",
+      "Used SQL, Python, and Power BI to analyze 299K+ retail transactions and identify key revenue-driving categories and customer segments.",
+      "Developed dashboards and insights to support customer retention, AOV growth, and inventory optimization.",
+      "Recommended targeted loyalty programs, product bundling, and inventory adjustments based on customer and category performance ",
     ],
     tech: ["Python", "Pandas", "Matplotlib"],
     github: "",
     live: "",
   },
   {
-    title: "Business Insights using SQL",
+    title: "Vendor Distance Monitoring ",
     summary:
       "Answered real-world business questions using advanced SQL queries.",
     details: [
-      "Wrote complex SQL queries with joins, subqueries, and window functions.",
-      "Analyzed large datasets to uncover revenue and customer insights.",
-      "Optimized queries for performance and readability.",
-      "Translated raw query results into meaningful business insights.",
+      "Processed large-scale vendor and customer datasets using SQL to calculate distance metrics and operational impact.",
+      "Built optimized SQL queries leveraging joins and window functions to detect inefficiencies in vendor distribution.",
+      "Translated query outputs into business insights to support logistics optimization and cost reduction strategies.",
     ],
-    tech: ["SQL", "MySQL"],
+    tech: ["SQL", "Excel", "MySQL", "Power BI"],
     github: "",
     live: "",
   },

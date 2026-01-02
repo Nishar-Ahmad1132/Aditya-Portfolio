@@ -1,22 +1,22 @@
 const experienceData = [
   {
-    role: "Business Analyst Intern",
+    role: "Business Analyst Internship",
     company: "BONAMI Software",
     duration: "June 2024 – August 2024",
     points: [
-      "Analyzed datasets using SQL and Excel to uncover trends and actionable business insights.",
-      "Designed interactive Power BI dashboards to track KPIs and visualize business performance.",
-      "Collaborated with stakeholders to gather and document business requirements aligned with AI-driven solutions.",
+      "Analyzed business and operational datasets using SQL and Advanced Excel, and built Power BI dashboards to track KPIs and support data-driven decision-making.",
+      "Used Jira to create and manage user stories, acceptance criteria, and task tracking, ensuring structured execution and timely delivery.",
+      "Collaborated with stakeholders to gather and document business requirements, translating them into clear analytical deliverables.",
     ],
   },
   {
-    role: "Analyst Fellow",
+    role: "Analyst Fellowship",
     company: "Crack Non Tech",
     duration: "May 2025 – July 2025",
     points: [
-      "Built strong foundations in business fundamentals, market analysis, and profitability strategies through case studies.",
-      "Gained hands-on experience with SQL and Python for data analysis.",
-      "Enhanced communication and presentation skills through structured, team-based problem-solving simulations.",
+      "Analyzed real-world business cases involving profitability, market entry, and cost structures, applying structured problem-solving frameworks.",
+      "Worked on data-backed business simulations, evaluating trade-offs and recommending strategies based on financial and market metrics.",
+      "Presented insights and recommendations through structured storytelling, strengthening business communication and stakeholder-facing skills.",
     ],
   },
 ];
