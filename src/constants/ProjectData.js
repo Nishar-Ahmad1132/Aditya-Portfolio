@@ -21,7 +21,7 @@ const projectsData = [
       "Developed dashboards and insights to support customer retention, AOV growth, and inventory optimization.",
       "Recommended targeted loyalty programs, product bundling, and inventory adjustments based on customer and category performance ",
     ],
-    tech: ["Python", "Pandas", "Matplotlib"],
+    tech: ["Python", "Excel", "JIRA", "Power BI", "SQL"],
     github: "",
     live: "",
   },

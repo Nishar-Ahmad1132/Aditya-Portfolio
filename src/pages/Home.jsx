@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import profileImg from "../assets/images/profile.png";
+import profileImg from "../assets/images/img1.jpg";
 
 import About from "./About";
 import Education from "./Education";
@@ -57,9 +57,15 @@ const Home = () => {
               <span className="animate-pulse">|</span>
             </h2>
 
-            <p className="mt-6 text-gray-400 max-w-xl leading-relaxed">
-              I analyze data to uncover insights, optimize business decisions,
-              and build impactful dashboards using SQL, Python, and Power BI.
+            {/* OPENER STATEMENT */}
+            <p className="mt-6 text-xl md:text-2xl text-white font-medium max-w-xl leading-snug">
+              Numbers don’t make decisions — people do
+            </p>
+
+            <p className="mt-4 text-gray-400 max-w-xl leading-relaxed">
+              I work where analytics meets strategy: finding patterns, asking the
+              right questions, and translating numbers into actions that
+              actually move products and businesses forward.
             </p>
 
             <div className="mt-8 flex flex-wrap gap-4">
@@ -84,12 +90,24 @@ const Home = () => {
             <div className="relative group">
               <div className="absolute inset-0 rounded-2xl bg-cyan-400 opacity-30 blur-2xl group-hover:opacity-50 transition"></div>
 
-              <img
-                src={profileImg}
-                alt="Aditya Jha"
-                className="relative w-72 h-96 object-cover rounded-2xl shadow-xl
-                           transform group-hover:-translate-y-2 transition duration-300"
-              />
+              <div className="flex justify-center md:justify-end">
+                <div className="relative group">
+                  {/* Subtle glow */}
+                  <div className="absolute inset-0 rounded-2xl bg-cyan-400/20 blur-xl"></div>
+
+                  {/* Image frame */}
+                  <div
+                    className="relative w-72 aspect-[4/5] overflow-hidden rounded-2xl shadow-xl
+                 transform group-hover:-translate-y-2 transition duration-300"
+                  >
+                    <img
+                      src={profileImg}
+                      alt="Aditya Jha"
+                      className="w-full h-full object-cover object-[50%_12%]"
+                    />
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
