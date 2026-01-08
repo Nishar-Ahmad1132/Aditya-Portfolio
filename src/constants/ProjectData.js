@@ -11,6 +11,7 @@ const projectsData = [
     tech: ["SQL", "Python", "Power BI"],
     github: "",
     live: "",
+    pdf: "",
   },
   {
     title: "Customer Churn Analysis",
@@ -24,6 +25,7 @@ const projectsData = [
     tech: ["Python", "Excel", "JIRA", "Power BI", "SQL"],
     github: "",
     live: "",
+    pdf: "/pdfs/cust_churm.pdf",
   },
   {
     title: "Vendor Distance Monitoring ",
@@ -37,6 +39,7 @@ const projectsData = [
     tech: ["SQL", "Excel", "MySQL", "Power BI"],
     github: "",
     live: "",
+    pdf: "",
   },
 ];
 

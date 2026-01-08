@@ -54,8 +54,9 @@ const Projects = () => {
               </div>
 
               {/* Links */}
-              {(project.github || project.live) && (
+              {(project.github || project.live || project.pdf) && (
                 <div className="mt-6 flex gap-4 text-sm">
+
                   {project.github && (
                     <a
                       href={project.github}
@@ -66,6 +67,7 @@ const Projects = () => {
                       GitHub →
                     </a>
                   )}
+
                   {project.live && (
                     <a
                       href={project.live}
@@ -76,6 +78,18 @@ const Projects = () => {
                       Live →
                     </a>
                   )}
+
+                  {project.pdf && (
+                    <a
+                      href={project.pdf}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-cyan-300 hover:underline font-medium"
+                    >
+                      View Details (PDF) →
+                    </a>
+                  )}
+                  
                 </div>
               )}
             </div>
